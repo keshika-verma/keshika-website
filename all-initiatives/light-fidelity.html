@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Fidelity (Li-Fi) | Keshika Verma</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <div class="page-grid"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Keshika Verma</div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">My Story</a>
+        <a href="../initiatives.html" class="active">Initiatives</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../journey.html">Journey</a>
+        <a href="../fun.html">Fun</a>
+        <a href="../contact.html">Say Hello!</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="lifi-hero-section">
+      <div class="section-shell">
+        <div class="lifi-hero-grid">
+          <div class="lifi-hero-text">
+            <p class="lifi-mini">SCIENCE BUILD • LIGHT COMMUNICATION</p>
+            <h1>Light Fidelity (Li-Fi)</h1>
+            <h2>Sending music through light.</h2>
+            <p class="lifi-subtitle">
+              A working proof-of-concept showing how data, in this case audio, can travel not through radio waves,
+              but through rapidly modulated light.
+            </p>
+
+            <div class="lifi-hero-buttons">
+              <a href="#how-it-works" class="primary-btn">See How It Works →</a>
+              <a href="#why-it-matters" class="secondary-btn">Why It Matters →</a>
+            </div>
+          </div>
+
+          <div class="lifi-hero-image">
+            <img src="../images/li-fi.png" height="300" width="200" alt="Li-Fi demo setup showing transmitter, solar panel receiver and speaker" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK NOTE -->
+    <section class="lifi-note-section">
+      <div class="section-shell">
+        <div class="lifi-note-card">
+          <p>
+            <strong>Quick note:</strong> this photograph was captured mid-setup, not as a studio shot,
+            but it clearly shows the working parts of the build and how the system was arranged.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU'RE LOOKING AT -->
+    <section class="lifi-breakdown-section">
+      <div class="section-shell">
+        <div class="lifi-section-head">
+          <p class="lifi-kicker">Build Breakdown</p>
+          <h2>What you’re looking at</h2>
+        </div>
+
+        <div class="lifi-breakdown-grid">
+          <article class="lifi-breakdown-card">
+            <span>01</span>
+            <h3>LED transmitter</h3>
+            <p>
+              A cluster of LEDs acts as the transmitter. The audio signal makes them vary in brightness extremely fast,
+              far too quickly for the human eye to notice.
+            </p>
+          </article>
+
+          <article class="lifi-breakdown-card">
+            <span>02</span>
+            <h3>Solar-panel receiver</h3>
+            <p>
+              The solar panel faces the LEDs and converts the changing light intensity back into a tiny electrical signal.
+            </p>
+          </article>
+
+          <article class="lifi-breakdown-card">
+            <span>03</span>
+            <h3>Battery</h3>
+            <p>
+              The battery powers the LED side of the circuit, allowing the transmitting setup to function reliably.
+            </p>
+          </article>
+
+          <article class="lifi-breakdown-card">
+            <span>04</span>
+            <h3>Laptop audio source</h3>
+            <p>
+              The laptop plays the music and sends the audio waveform into the transmitting side of the build.
+            </p>
+          </article>
+
+          <article class="lifi-breakdown-card">
+            <span>05</span>
+            <h3>Speaker output</h3>
+            <p>
+              The recovered signal reaches the speaker, where the music becomes audible again after having travelled through light.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="lifi-story-section">
+      <div class="section-shell">
+        <div class="lifi-story-card">
+          <div class="lifi-story-text">
+            <p class="lifi-kicker">Core Principle</p>
+            <h2>How this demo works</h2>
+
+            <p>
+              The laptop plays a song and sends the audio waveform into the LED side of the circuit.
+              Those LEDs then modulate their brightness at audio-rate, so quickly that the flicker is invisible,
+              but the information is still being carried.
+            </p>
+
+            <p>
+              That light falls onto the solar panel receiver. Because the intensity of the light changes with the music,
+              the electrical output of the solar panel changes in the same pattern.
+            </p>
+
+            <p>
+              That recovered electrical signal is then routed to a speaker, where it is amplified and played back.
+              In simple terms: <strong>music in, light out; light in, music out.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IS LI-FI -->
+    <section class="lifi-story-section">
+      <div class="section-shell">
+        <div class="lifi-story-card lifi-split-layout">
+          <div class="lifi-story-text">
+            <p class="lifi-kicker">Concept</p>
+            <h2>What is Li-Fi?</h2>
+
+            <p>
+              Li-Fi, or Light Fidelity, is a form of visible-light communication in which LEDs transmit information
+              by varying their intensity faster than the eye can detect.
+            </p>
+
+            <p>
+              A light-sensitive receiver such as a photodiode or solar cell detects those changes and converts them
+              back into electrical signals that represent data. In this build, that data was audio. In more advanced
+              systems, it could be text, images, or even high-speed internet.
+            </p>
+          </div>
+
+          <div class="lifi-side-panel">
+            <div class="lifi-mini-panel">
+              <h3>Proof of concept</h3>
+              <p>
+                This build was intentionally simple so the idea stayed visible and understandable,
+                while still demonstrating the core principle behind Li-Fi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY IT CAN BE USEFUL -->
+    <section id="why-it-matters" class="lifi-advantages-section">
+      <div class="section-shell">
+        <div class="lifi-section-head">
+          <p class="lifi-kicker">Why It Matters</p>
+          <h2>Why Li-Fi can be useful</h2>
+        </div>
+
+        <div class="lifi-advantages-grid">
+          <article class="lifi-advantage-card">
+            <h3>RF-free zones</h3>
+            <p>Useful in spaces where radio communication may be restricted or may cause interference.</p>
+          </article>
+
+          <article class="lifi-advantage-card">
+            <h3>Security by containment</h3>
+            <p>Because light usually does not pass through walls, communication can be more localized.</p>
+          </article>
+
+          <article class="lifi-advantage-card">
+            <h3>Large unlicensed spectrum</h3>
+            <p>Visible and near-infrared light offer an enormous communication space compared to crowded RF bands.</p>
+          </article>
+
+          <article class="lifi-advantage-card">
+            <h3>High density</h3>
+            <p>Each light source can become its own micro-cell, which can reduce congestion in crowded spaces.</p>
+          </article>
+
+          <article class="lifi-advantage-card">
+            <h3>Lighting + data</h3>
+            <p>Existing lighting infrastructure can also function as data infrastructure in the right systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRADEOFFS -->
+    <section class="lifi-story-section">
+      <div class="section-shell">
+        <div class="lifi-story-card">
+          <div class="lifi-story-text">
+            <p class="lifi-kicker">Reality Check</p>
+            <h2>Trade-offs compared to Wi-Fi</h2>
+
+            <p>
+              Li-Fi is exciting, but it also comes with practical constraints. Because light can be blocked,
+              placement matters much more than in radio-based systems. Bright ambient lighting and sunlight can
+              introduce noise, and mobility between light cells requires careful design.
+            </p>
+
+            <p>
+              That means Li-Fi does not simply replace Wi-Fi everywhere. Instead, it becomes interesting in places
+              where the unique strengths of light-based communication really matter.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHERE IT CAN SHINE -->
+    <section class="lifi-where-section">
+      <div class="section-shell">
+        <div class="lifi-section-head">
+          <p class="lifi-kicker">Applications</p>
+          <h2>Where Li-Fi can shine</h2>
+        </div>
+
+        <div class="lifi-where-grid">
+          <article class="lifi-where-card">
+            <h3>Hospitals & aircraft</h3>
+            <p>Settings where RF interference matters and communication needs more control.</p>
+          </article>
+
+          <article class="lifi-where-card">
+            <h3>Factories & power plants</h3>
+            <p>Heavy electromagnetic environments where radio communication can be difficult.</p>
+          </article>
+
+          <article class="lifi-where-card">
+            <h3>Underwater communication</h3>
+            <p>Over short distances, light can outperform radio in water-based environments.</p>
+          </article>
+
+          <article class="lifi-where-card">
+            <h3>Smart lighting & IoT</h3>
+            <p>Lights can do more than illuminate, they can also help carry information.</p>
+          </article>
+
+          <article class="lifi-where-card">
+            <h3>Museums, libraries, classrooms</h3>
+            <p>Localized communication tied to specific spaces or individual lighting zones.</p>
+          </article>
+
+          <article class="lifi-where-card">
+            <h3>High-density venues</h3>
+            <p>Conference halls, airports, and large public spaces where localized cells may help reduce congestion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL REFLECTION -->
+    <section class="lifi-story-section">
+      <div class="section-shell">
+        <div class="lifi-story-card">
+          <div class="lifi-story-text">
+            <p class="lifi-kicker">What I Built</p>
+            <h2>A small build with a big idea behind it</h2>
+
+            <p>
+              This was a minimal end-to-end Li-Fi chain: audio in, light out; light in, audio out.
+              It was not optimized for long range or perfect fidelity, but that was never the point.
+            </p>
+
+            <p>
+              The point was to make the concept visible, understandable, and real in a single working build.
+              That is what made this project meaningful to me. It turned a futuristic idea into something I could
+              physically demonstrate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="lifi-cta-section">
+      <div class="section-shell">
+        <div class="lifi-cta-card">
+          <h2>Back to initiatives</h2>
+          <p>
+            This project was one step in a much larger journey of building, experimenting and learning.
+          </p>
+          <a href="../initiatives.html" class="secondary-btn">View More Initiatives →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Keshika Verma</p>
+    <p>Built with curiosity and creativity &lt;3</p>
+    <a href="https://www.linkedin.com/in/keshika-verma/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

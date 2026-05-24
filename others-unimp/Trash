@@ -1,0 +1,725 @@
+<section class="highlights-section">
+          <div class="section-shell">
+            <h2>Highlights</h2>
+      
+            <div class="highlight-grid">
+              <a href="initiatives.html" class="feature-card">
+                <h3>Digital Disha</h3>
+                <p>
+                  Digital Disha is a grassroots digital literacy program aimed at empowering rural students and students in less connected areas with the digital skills they need to succeed in the modern world.
+                </p>
+              </a>
+      
+              <a href="writing.html" class="feature-card">
+                <h3>The Last Enemy</h3>
+                <p>
+                  My first published book exploring humanity, unity, and the deeper questions shaping our world. Set in 2048, The Last Enemy is not just a sci-fi novel about machines, it’s a reflection of everything we fail to address as a species. Bold, unsettling, and urgent, it challenges readers to reflect on unity, division, and what we owe each other.
+                </p>
+              </a>
+      
+              <a href="journey.html" class="feature-card">
+                <h3>Student Leadership</h3>
+                <p>
+                  From Head Girl to national competitions and conferences, leadership has been a core part of my journey. 
+                </p>
+              </a>
+      
+              <a href="initiatives.html" class="feature-card">
+                <h3>Innovation Projects</h3>
+                <p>
+                  Building ideas in technology, education, and assistive innovation through projects and experiments.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+        _______________________________________________________________________________________________________________________________-
+
+        .about-hero-section {
+          padding: 64px 0 24px;
+        }
+        
+        .about-hero-wrap {
+          max-width: 900px;
+        }
+        
+        .about-float img {
+          display: block;
+          border-radius: 24px;
+          border: 1px solid rgba(255,255,255,0.10);
+          box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.28),
+            0 0 28px rgba(184, 136, 56, 0.10);
+          background: rgba(255,255,255,0.03);
+        }
+        
+        .about-mini-figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .about-mini-figure img {
+          object-fit: cover;
+          object-position: center top;
+        }
+        
+        .about-float-right {
+          float: right;
+          margin-left: 10px;
+          margin-top: 8px;
+          display: flex;
+          justify-content: center;
+        }
+        
+        
+        .about-kicker {
+          color: var(--accent-gold);
+          font-size: 0.92rem;
+          letter-spacing: 1.6px;
+          text-transform: uppercase;
+          margin-bottom: 14px;
+          font-weight: 700;
+        }
+        
+        .about-hero-wrap h1 {
+          font-size: clamp(3rem, 7vw, 5.5rem);
+          line-height: 0.95;
+          margin-bottom: 18px;
+          color: var(--text-main);
+          letter-spacing: -0.04em;
+        }
+        
+        .about-hero-wrap h2 {
+          font-size: clamp(1.2rem, 2vw, 1.6rem);
+          line-height: 1.6;
+          font-weight: 500;
+          color: #e4e9ee;
+          margin-bottom: 20px;
+          max-width: 780px;
+        }
+        
+        .about-hero-text {
+          max-width: 760px;
+          font-size: 1.05rem;
+          line-height: 1.9;
+          color: var(--text-soft);
+        }
+        
+        .about-prose-section {
+          padding: 18px 0 26px;
+        }
+        
+        .about-prose {
+          position: relative;
+          border-radius: 30px;
+          background: linear-gradient(
+            135deg,
+            rgba(13, 31, 49, 0.78),
+            rgba(8, 22, 36, 0.90),
+            rgba(18, 38, 58, 0.76)
+          );
+          border: 1px solid rgba(255,255,255,0.06);
+          box-shadow: var(--shadow-soft);
+          padding: 38px 38px 34px;
+          overflow: hidden;
+        }
+        
+        .about-prose::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(circle at 18% 18%, rgba(184, 136, 56, 0.08), transparent 20%),
+            radial-gradient(circle at 82% 82%, rgba(64, 100, 140, 0.10), transparent 24%);
+          pointer-events: none;
+        }
+        
+        .about-prose > * {
+          position: relative;
+          z-index: 1;
+        }
+        
+        .about-prose h2 {
+          font-size: clamp(2rem, 4vw, 3rem);
+          line-height: 1;
+          margin-bottom: 22px;
+          color: var(--text-main);
+          letter-spacing: -0.04em;
+        }
+        
+        .about-prose p {
+          color: var(--text-soft);
+          font-size: 1.03rem;
+          line-height: 1.95;
+          margin-bottom: 18px;
+        }
+        
+        .about-prose strong {
+          color: var(--text-main);
+          font-weight: 700;
+        }
+        
+        .about-prose em {
+          color: #f0e5d1;
+        }
+        
+        .about-float {
+          width: min(360px, 42%);
+          margin-bottom: 16px;
+        }
+        
+        .about-mini-figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .about-mini-figure figcaption {
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+          font-size: 0.86rem;
+          line-height: 1.6;
+          color: var(--text-muted);
+        }
+        
+        .about-float-left {
+          float: left;
+          margin-right: 28px;
+          margin-top: 6px;
+          display: flex;
+          justify-content: center
+        }
+        
+        .about-prose::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        
+        .about-end-section {
+          padding: 22px 0 46px;
+        }
+        
+        .about-end-panel {
+          border-radius: 30px;
+          padding: 40px 34px;
+          text-align: center;
+          background: linear-gradient(
+            135deg,
+            rgba(17, 34, 53, 0.86),
+            rgba(10, 25, 40, 0.95),
+            rgba(21, 41, 62, 0.82)
+          );
+          border: 1px solid rgba(255,255,255,0.07);
+          box-shadow: var(--shadow-soft);
+        }
+        
+        .about-end-line {
+          font-size: 1.18rem;
+          line-height: 1.9;
+          color: var(--text-main);
+          max-width: 860px;
+          margin: 0 auto 10px;
+        }
+        
+        .about-end-line.soft {
+          color: var(--accent-gold-light);
+          margin-bottom: 0;
+        }
+        
+        /* responsive */
+        @media (max-width: 900px) {
+          .about-float,
+          .about-float-left,
+          .about-float-right {
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 20px 0;
+          }
+        
+          .about-prose {
+            padding: 30px 24px 26px;
+          }
+        
+          .about-prose p {
+            font-size: 0.98rem;
+            line-height: 1.85;
+          }
+        
+          .about-end-panel {
+            padding: 32px 22px;
+          }
+        
+          .about-end-line {
+            font-size: 1.05rem;
+          }
+        }
+        
+        @media (max-width: 760px) {
+          .about-hero-section {
+            padding: 50px 0 18px;
+          }
+        
+          .about-hero-wrap h1 {
+            font-size: 2.8rem;
+          }
+        
+          .about-hero-wrap h2 {
+            font-size: 1.08rem;
+            line-height: 1.75;
+          }
+        
+          .about-hero-text {
+            font-size: 0.97rem;
+            line-height: 1.85;
+          }
+        
+          .about-prose h2 {
+            font-size: 2.15rem;
+          }
+        } 
+
+
+
+
+        _______________________________________________________________________________________________________________________________-
+        _______________________________________________________________________________________________________________________________-
+
+        /* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.about-hero-section {
+  padding: 64px 0 24px;
+}
+
+.about-hero-wrap {
+  max-width: 900px;
+}
+
+.about-kicker {
+  color: var(--accent-gold);
+  font-size: 0.92rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.about-hero-wrap h1 {
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  margin-bottom: 18px;
+  color: var(--text-main);
+  letter-spacing: -0.04em;
+}
+
+.about-hero-wrap h2 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.6;
+  font-weight: 500;
+  color: #e4e9ee;
+  margin-bottom: 20px;
+  max-width: 780px;
+}
+
+.about-hero-text {
+  max-width: 760px;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-soft);
+}
+
+/* =========================================================
+   PROSE SECTIONS
+========================================================= */
+
+.about-prose-section {
+  padding: 18px 0 26px;
+}
+
+.about-prose {
+  position: relative;
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(13, 31, 49, 0.78),
+    rgba(8, 22, 36, 0.90),
+    rgba(18, 38, 58, 0.76)
+  );
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: var(--shadow-soft);
+  padding: 38px 38px 34px;
+  overflow: hidden;
+}
+
+.about-prose::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(184, 136, 56, 0.08), transparent 20%),
+    radial-gradient(circle at 82% 82%, rgba(64, 100, 140, 0.10), transparent 24%);
+  pointer-events: none;
+}
+
+.about-prose > * {
+  position: relative;
+  z-index: 1;
+}
+
+.about-prose h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  margin-bottom: 22px;
+  color: var(--text-main);
+  letter-spacing: -0.04em;
+}
+
+.about-prose p {
+  color: var(--text-soft);
+  font-size: 1.03rem;
+  line-height: 1.95;
+  margin-bottom: 18px;
+  max-width: none;
+}
+
+.about-prose strong {
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.about-prose em {
+  color: #f0e5d1;
+}
+
+.about-prose::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* =========================================================
+   FLOATING IMAGE SYSTEM
+========================================================= */
+
+.about-float {
+  margin-bottom: 16px;
+}
+
+.about-float-right {
+  float: right;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.about-float-left {
+  float: left;
+  margin-right: 16px;
+  margin-top: 6px;
+}
+
+.about-float img {
+  display: block;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.28),
+    0 0 28px rgba(184, 136, 56, 0.10);
+  background: rgba(255,255,255,0.03);
+}
+
+/* single / standard figure */
+.about-mini-figure {
+  margin: 0;
+}
+
+.about-mini-figure img {
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 24px;
+}
+
+.about-mini-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* optional shorter portrait */
+.about-short-portrait img {
+  object-fit: cover;
+  object-position: center 12%;
+}
+
+/* =========================================================
+   TWO PHOTO STACK
+========================================================= */
+
+.about-photo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-photo-stack .about-mini-figure img {
+  width: 100%;
+}
+
+.about-photo-stack .about-mini-figure figcaption {
+  text-align: center;
+}
+
+/* =========================================================
+   THREE PHOTO COLLAGE
+========================================================= */
+
+.about-photo-collage {
+  width: min(340px, 36%);
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.about-photo-collage.about-float-right {
+  float: right;
+  margin-left: 18px;
+  margin-top: 8px;
+}
+
+.about-photo-collage.about-float-left {
+  float: left;
+  margin-right: 18px;
+  margin-top: 8px;
+}
+
+.about-collage-main,
+.about-collage-small {
+  margin: 0;
+}
+
+.about-collage-main {
+  grid-row: span 2;
+}
+
+.about-collage-main img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.28),
+    0 0 28px rgba(184, 136, 56, 0.10);
+  background: rgba(255,255,255,0.03);
+}
+
+.about-collage-small img {
+  width: 100%;
+  height: 154px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.22),
+    0 0 18px rgba(184, 136, 56, 0.08);
+  background: rgba(255,255,255,0.03);
+}
+
+.about-photo-note {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* recommendations section */
+
+.about-recommendations-section {
+  padding: 34px 0 60px;
+}
+
+.about-recommendations-panel {
+  border-radius: 30px;
+  padding: 40px 36px;
+  text-align: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(15, 33, 52, 0.84),
+    rgba(10, 26, 43, 0.92),
+    rgba(18, 38, 58, 0.84)
+  );
+
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-recommendations-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 22% 28%, rgba(184,136,56,0.10), transparent 20%),
+    radial-gradient(circle at 78% 72%, rgba(64,100,140,0.12), transparent 24%);
+
+  pointer-events: none;
+}
+
+.about-recommendations-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.about-recommendations-panel h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 18px;
+  letter-spacing: -0.04em;
+}
+
+.about-recommendations-text {
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  max-width: 720px;
+  margin: 0 auto 18px;
+}
+
+/* =========================================================
+   END PANEL
+========================================================= */
+
+.about-end-section {
+  padding: 22px 0 46px;
+}
+
+.about-end-panel {
+  border-radius: 30px;
+  padding: 40px 34px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 34, 53, 0.86),
+    rgba(10, 25, 40, 0.95),
+    rgba(21, 41, 62, 0.82)
+  );
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-end-line {
+  font-size: 1.18rem;
+  line-height: 1.9;
+  color: var(--text-main);
+  max-width: 860px;
+  margin: 0 auto 10px;
+}
+
+.about-end-line.soft {
+  color: var(--accent-gold-light);
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 980px) {
+  .about-float,
+  .about-float-left,
+  .about-float-right,
+  .about-photo-collage,
+  .about-photo-collage.about-float-left,
+  .about-photo-collage.about-float-right {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .about-photo-collage {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-collage-main {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .about-collage-main img {
+    min-height: 260px;
+  }
+
+  .about-collage-small img {
+    height: 180px;
+  }
+
+  .about-prose {
+    padding: 30px 24px 26px;
+  }
+
+  .about-prose p {
+    font-size: 0.98rem;
+    line-height: 1.85;
+  }
+
+  .about-end-panel {
+    padding: 32px 22px;
+  }
+
+  .about-end-line {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-hero-section {
+    padding: 50px 0 18px;
+  }
+
+  .about-hero-wrap h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-hero-wrap h2 {
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .about-hero-text {
+    font-size: 0.97rem;
+    line-height: 1.85;
+  }
+
+  .about-prose h2 {
+    font-size: 2.15rem;
+  }
+
+  .about-photo-collage {
+    grid-template-columns: 1fr;
+  }
+
+  .about-collage-main img,
+  .about-collage-small img,
+  .about-short-portrait img {
+    height: auto;
+    min-height: unset;
+    max-height: none;
+  }
+}

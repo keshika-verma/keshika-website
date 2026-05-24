@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automation of Spillway Gates | Keshika Verma</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <div class="page-grid"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Keshika Verma</div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">My Story</a>
+        <a href="../initiatives.html" class="active">Initiatives</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../journey.html">Journey</a>
+        <a href="../fun.html">Fun</a>
+        <a href="../contact.html">Say Hello!</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="auto-hero">
+      <div class="section-shell">
+        <p class="auto-kicker">RESEARCH • AUTOMATION • SYSTEM THINKING</p>
+        <h1>Automation of Spillway Gates of Dams and Barrages</h1>
+        <p class="auto-sub">
+          A research-based project exploring how automation systems can help address flood risks,
+          improve decision-making, and reduce human dependency in critical water-management systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- SHORT CONTEXT -->
+    <section class="auto-intro">
+      <div class="section-shell">
+        <div class="auto-intro-card">
+          <p>
+            Designed a solution catering to the flood problem in Himachal Pradesh and other regions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PDF EMBED -->
+    <section class="auto-pdf-section">
+      <div class="section-shell">
+        <div class="auto-pdf-card">
+          <p class="auto-kicker">Research Paper</p>
+          <h2>Full Project Document</h2>
+
+          <div class="auto-pdf-frame">
+            <iframe
+              src="Automation.pdf"
+              title="Automation of Spillway Gates Project"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="auto-cta">
+      <div class="section-shell">
+        <div class="auto-cta-card">
+          <h2>Back to initiatives</h2>
+          <a href="../initiatives.html" class="secondary-btn">View More →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Keshika Verma</p>
+    <p>Built with curiosity and creativity &lt;3</p>
+    <a href="https://www.linkedin.com/in/keshika-verma/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

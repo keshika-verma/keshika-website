@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Last Enemy | Keshika Verma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-grid"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Keshika Verma</div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="initiatives.html" class="active">Initiatives</a>
+        <a href="writing.html">Writing</a>
+        <a href="journey.html">Journey</a>
+        <a href="fun.html">Fun</a>
+        <a href="contact.html">Say Hello!</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="book-hero-section">
+      <div class="section-shell">
+        <div class="book-hero-grid">
+          <div class="book-hero-text">
+            <p class="book-eyebrow">MY FIRST NOVEL</p>
+            <h1>The Last Enemy:<br><span>One World - One Fate</span></h1>
+            <p class="book-subtitle">A powerful sci-fi novel set in 2048.</p>
+            <a href = "https://www.linkedin.com/posts/keshika-verma_thelastenemy-kindle-sciencefiction-activity-7315986907052531712-iuZR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEeJPoQBVAgIjoGRKcnONffl7Yq6siAqXrA" target="_blank""><p class="book-achievement">Ranked <strong>#2 in Science Fiction Category on the Kindle Store</strong></p></a>
+
+            <p class="book-description">
+              Set in 2048, <em>The Last Enemy</em> is not just a sci-fi novel about machines,
+              it is a reflection of everything we fail to address as a species.
+              Bold, unsettling, and urgent, it invites readers to reflect on unity, division,
+              and what we owe each other.
+            </p>
+
+            <div class="book-hero-buttons">
+              <a href="https://www.amazon.in/gp/product/B0F2JPW1C4" target="_blank" class="primary-btn">Buy on Amazon</a>
+            </div>
+          </div>
+
+          <div class="book-cover-wrap">
+            <div class="book-cover-card">
+              <img src="images/about-book.jpg" alt="The Last Enemy book cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book-about" class="book-info-section">
+      <div class="section-shell">
+        <div class="book-info-grid">
+          <article class="book-info-card">
+            <p class="panel-label">About the Book</p>
+            <h2>The Last Enemy: One World - One Fate</h2>
+            <p class="book-card-p">
+                Read more about the book    
+            </p>
+            <a href = "about-the-book.html" class = "primary-btn"> Read more </a>
+          </article>
+
+          <article class="book-info-card">
+            <p class="panel-label">The Journey of the Book</p>
+            <h2>What writing it changed in me</h2>
+            <p class="book-card-p">
+            How this book sparked a life-changing journey into storytelling, AI, and the meaning of humanity. I, the author, was changed by it
+              <br>
+            </p>
+            <a href = "jounrney-of-the-book.html" class = "primary-btn"> Read more </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reader-section">
+      <div class="section-shell">
+        <div class="reader-heading">
+          <p class="panel-label">Reader Responses</p>
+          <h2>What readers say</h2>
+        </div>
+
+        <div class="reader-grid">
+          <article class="reader-card">
+            <p class="reader-quote">
+              “Your novel profoundly shifted my perspective, and I’m grateful for the way you
+              intertwined personal narratives with our shared global destiny.”
+            </p>
+            <p class="reader-name">Amazon Customer</p>
+          </article>
+
+          <article class="reader-card">
+            <p class="reader-quote">
+              “The best that could come from a young fictional mind.... A literary work that delves
+              into what future holds for humanity.... The Creation vs the creator..... Best wishes
+              to the authoress who has the highest potential to explore the world of fiction....!”
+            </p>
+            <p class="reader-name">Amazon Customer, Ankush Thakur</p>
+          </article>
+
+          <article class="reader-card">
+            <p class="reader-quote">
+              “Great book!! A must read ✨✨”
+            </p>
+            <p class="reader-name">Amazon Customer, Reema</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-cta-section">
+      <div class="section-shell">
+        <div class="book-cta-card">
+          <p class="panel-label">Available Now</p>
+          <h2>Read the book</h2>
+          <p>
+            If this speaks to you, I would love for you to read it and step into the world of
+            <em>The Last Enemy</em>.
+          </p>
+          <a href="https://www.amazon.in/gp/product/B0F2JPW1C4" target="_blank" class="primary-btn">Buy now here!</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Keshika Verma</p>
+    <p>Built with curiosity and creativity &lt;3</p>
+    <a href="https://www.linkedin.com/in/keshika-verma/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

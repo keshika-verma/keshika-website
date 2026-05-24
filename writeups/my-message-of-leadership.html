@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investiture Ceremony | Keshika Verma</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <div class="page-grid"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Keshika Verma</div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">My Story</a>
+        <a href="../initiatives.html">Initiatives</a>
+        <a href="../writing.html" class="active">Writing</a>
+        <a href="../journey.html">Journey</a>
+        <a href="../fun.html">Fun</a>
+        <a href="../contact.html">Say Hello!</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="article-page">
+      <div class="section-shell">
+
+        <!-- Top / Breadcrumb -->
+        <div class="article-topbar">
+          <a href="../writing.html" class="article-back">← Back to Writing</a>
+        </div>
+
+        <!-- Hero -->
+        <div class="article-hero">
+          <p class="article-kicker">Speeches &amp; Personal Messages</p>
+          <h1>Investiture Ceremony</h1>
+          <p class="article-subtitle">
+            A special leadership moment from my school journey, including my pledge as Head Girl and my message to the student cabinet.
+          </p>
+        </div>
+
+        <!-- Main article -->
+        <article class="article-body">
+          <h2>Pledge as the Head Girl of the School</h2>
+
+          <div class="article-feature-image">
+            <video controls preload="metadata" style="width: 100%; border-radius: 24px; display: block;">
+              <source src="../images/head-girl-pledge.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <h2>Message to the Cabinet</h2>
+
+          <div class="article-feature-image">
+            <video controls preload="metadata" style="width: 100%; border-radius: 24px; display: block;">
+              <source src="../images/head-girl-speech.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <p><strong>- KESHIKA VERMA</strong></p>
+        </article>
+
+        <!-- Bottom navigation -->
+        <div class="article-bottom-nav">
+          <a href="../writing.html" class="secondary-btn">← Back to Writing</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Keshika Verma</p>
+    <p>Built with curiosity and creativity &lt;3</p>
+    <a href="https://www.linkedin.com/in/keshika-verma/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

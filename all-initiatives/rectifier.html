@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full-Wave Rectifier | Keshika Verma</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <div class="page-grid"></div>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">Keshika Verma</div>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">My Story</a>
+        <a href="../initiatives.html" class="active">Initiatives</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../journey.html">Journey</a>
+        <a href="../fun.html">Fun</a>
+        <a href="../contact.html">Say Hello!</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="rectifier-hero-section">
+      <div class="section-shell">
+        <p class="rectifier-kicker">ELECTRONICS • CIRCUITS • PRACTICAL THINKING</p>
+        <h1>Full-Wave Rectifier</h1>
+        <p class="rectifier-subtitle">
+          One of my early electronics builds, created to understand how alternating current can be converted into usable direct current through a simple but powerful circuit.
+        </p>
+      </div>
+    </section>
+
+    <!-- IMAGE -->
+    <section class="rectifier-image-section">
+      <div class="section-shell">
+        <div class="rectifier-image-card">
+          <img src="../images/rectifier.jpg" alt="Full Wave Rectifier model" />
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY I BUILT IT -->
+    <section class="rectifier-story-section">
+      <div class="section-shell">
+        <div class="rectifier-story-card">
+          <p class="rectifier-section-tag">Why I built it</p>
+          <h2>Trying to understand useful electronics</h2>
+
+          <p>
+            Growing up in the mountains made practical systems feel important to me very early. Electricity, devices, and the way power is actually made usable were never just textbook ideas. They felt connected to real life.
+          </p>
+
+          <p>
+            This project was one of my early attempts to understand that world through building. I wanted to learn how AC power could be converted into DC power, because that basic idea sits behind so many real electronic systems.
+          </p>
+
+          <p>
+            I was not trying to claim a massive innovation here. What mattered to me was understanding the concept properly, assembling it physically, and seeing the circuit work in front of me.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTS TABLE -->
+    <section class="rectifier-table-section">
+      <div class="section-shell">
+        <div class="rectifier-table-card">
+          <p class="rectifier-section-tag">Build Breakdown</p>
+          <h2>Parts used</h2>
+
+          <div class="rectifier-table-wrap">
+            <table class="rectifier-table">
+              <thead>
+                <tr>
+                  <th>Part</th>
+                  <th>Role in the circuit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Transformer</td>
+                  <td>Steps down the AC voltage and provides the center-tapped secondary input.</td>
+                </tr>
+                <tr>
+                  <td>2 × IN4007 Diodes</td>
+                  <td>Allow current to flow in one direction so both halves of the AC signal can be rectified.</td>
+                </tr>
+                <tr>
+                  <td>Capacitor</td>
+                  <td>Smooths the pulsating DC output by reducing ripple.</td>
+                </tr>
+                <tr>
+                  <td>Resistor / Load</td>
+                  <td>Represents the component or circuit that uses the rectified output.</td>
+                </tr>
+                <tr>
+                  <td>Connecting wires</td>
+                  <td>Complete the electrical path between the components.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="rectifier-story-section">
+      <div class="section-shell">
+        <div class="rectifier-story-card">
+          <p class="rectifier-section-tag">How it works</p>
+          <h2>Converting AC into DC</h2>
+
+          <p>
+            A full-wave rectifier converts alternating current into direct current by using both halves of the AC waveform. In this circuit, the center-tapped transformer works with two diodes so that one diode conducts during one half-cycle and the other conducts during the opposite half-cycle.
+          </p>
+
+          <p>
+            Because of this, current through the load flows in the same direction during both halves of the input cycle. The output is therefore pulsating DC rather than alternating current.
+          </p>
+
+          <p>
+            The capacitor then helps smooth that output by storing and releasing charge, making the final voltage more stable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- USES -->
+    <section class="rectifier-uses-section">
+      <div class="section-shell">
+        <div class="rectifier-uses-head">
+          <p class="rectifier-section-tag">Applications</p>
+          <h2>Where rectifiers are used</h2>
+        </div>
+
+        <div class="rectifier-uses-grid">
+          <article class="rectifier-use-card">
+            <h3>Power supplies</h3>
+            <p>Used in adapters and power units to convert AC mains electricity into DC for devices.</p>
+          </article>
+
+          <article class="rectifier-use-card">
+            <h3>Battery charging circuits</h3>
+            <p>Helps convert incoming AC supply into the DC form needed for charging batteries.</p>
+          </article>
+
+          <article class="rectifier-use-card">
+            <h3>Consumer electronics</h3>
+            <p>Phones, radios, televisions, and many other electronic devices depend on rectified power internally.</p>
+          </article>
+
+          <article class="rectifier-use-card">
+            <h3>Basic lab circuits</h3>
+            <p>Often used in education and prototyping as one of the first practical power-conversion circuits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="rectifier-story-section">
+      <div class="section-shell">
+        <div class="rectifier-story-card">
+          <p class="rectifier-section-tag">Reflection</p>
+          <h2>A small build that taught me a foundational idea</h2>
+
+          <p>
+            This project was important to me because it turned a concept from circuit theory into something physical and understandable. It helped me see how electronic systems are built from simple principles that become useful in real life.
+          </p>
+
+          <p>
+            More than anything, it reflects an early version of how I like to learn: by building, observing, and understanding how things actually work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="rectifier-cta-section">
+      <div class="section-shell">
+        <div class="rectifier-cta-card">
+          <h2>Back to initiatives</h2>
+          <a href="../initiatives.html" class="secondary-btn">View More Initiatives →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Keshika Verma</p>
+    <p>Built with curiosity and creativity &lt;3</p>
+    <a href="https://www.linkedin.com/in/keshika-verma/" target="_blank">LinkedIn</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
