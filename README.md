@@ -1,4 +1,4 @@
-**Keshika Website V2 — Developer Reference Sheet**
+**Keshika Website — Developer Reference Sheet**
 
 This homepage is built around a clean navbar with seven links — **Home, About, Initiatives, Writing, Journey, Fun, Contact** — and the HTML structure and styling are split between your final `index.html` and your current `style.css`. The page uses a fixed visual language: dark blue-gold gradient background, floating blurred blobs, a sticky translucent navbar, a cinematic hero section, glassmorphism-style cards, and responsive layout behavior.  
 
