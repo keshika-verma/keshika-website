@@ -2445,10 +2445,6 @@ footer a:hover {
    DIGITAL DISHA PAGE
 ========================= */
 
-/* =========================
-   DIGITAL DISHA PAGE
-========================= */
-
 .project-hero-section {
   padding: 60px 0 26px;
 }
@@ -2834,10 +2830,6 @@ footer a:hover {
     min-width: 680px;
   }
 }
-
-/* =========================
-   VIKSIT BHARAT PAGE
-========================= */
 
 /* =========================
    VIKSIT BHARAT PAGE
@@ -4550,6 +4542,431 @@ footer a:hover {
 
   .lifi-hero-image img {
     height: 280px;
+  }
+}
+
+/* =========================================================
+   PEER EDUCATOR INITIATIVES PAGE
+========================================================= */
+
+.peer-hero-section {
+  padding: 64px 0 34px;
+}
+
+.peer-hero-wrap {
+  max-width: 980px;
+}
+
+.peer-mini {
+  color: var(--accent-gold);
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.peer-hero-wrap h1 {
+  font-size: clamp(3.1rem, 7vw, 5.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  color: var(--text-main);
+  margin-bottom: 20px;
+}
+
+.peer-hero-text {
+  max-width: 850px;
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.peer-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* Story */
+
+.peer-story-section,
+.peer-snapshot-section,
+.peer-initiatives-section,
+.peer-gallery-section,
+.peer-reflection-section {
+  padding: 22px 0 38px;
+}
+
+.peer-story-card,
+.peer-snapshot-card,
+.peer-gallery-card,
+.peer-reflection-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 36px;
+  background: linear-gradient(
+    135deg,
+    rgba(36, 12, 48, 0.84),
+    rgba(18, 7, 31, 0.94),
+    rgba(59, 18, 61, 0.82)
+  );
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: var(--shadow-soft);
+}
+
+.peer-story-card::before,
+.peer-snapshot-card::before,
+.peer-gallery-card::before,
+.peer-reflection-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(255, 79, 216, 0.10), transparent 22%),
+    radial-gradient(circle at 82% 78%, rgba(168, 85, 247, 0.12), transparent 26%);
+  pointer-events: none;
+}
+
+.peer-story-card > *,
+.peer-snapshot-card > *,
+.peer-gallery-card > *,
+.peer-reflection-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.peer-story-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.peer-story-card h2,
+.peer-gallery-card h2,
+.peer-reflection-card h2,
+.peer-section-heading h2 {
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--text-main);
+  margin-bottom: 18px;
+}
+
+.peer-story-card p,
+.peer-reflection-card p,
+.peer-section-heading p {
+  color: var(--text-soft);
+  font-size: 1.02rem;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  max-width: 900px;
+}
+
+/* Floating intro image */
+
+.peer-float {
+  display: block;
+  width: auto;
+  max-width: min(36%, 330px);
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  margin-bottom: 16px;
+}
+
+.peer-float-right {
+  float: right;
+  margin-left: 22px;
+  margin-top: 4px;
+}
+
+.peer-float-left {
+  float: left;
+  margin-right: 22px;
+  margin-top: 4px;
+}
+
+.peer-float img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 390px;
+  object-fit: contain;
+  border-radius: 22px;
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.28),
+    0 0 20px rgba(255, 79, 216, 0.08);
+}
+
+.peer-float figcaption {
+  margin-top: 9px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* Snapshot */
+
+.peer-snapshot-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.peer-snapshot-item {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.peer-snapshot-item span {
+  display: block;
+  color: var(--accent-gold-light);
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.peer-snapshot-item p {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Initiative cards */
+
+.peer-section-heading {
+  max-width: 860px;
+  margin-bottom: 30px;
+}
+
+.peer-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.peer-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(39, 14, 55, 0.84),
+    rgba(25, 9, 39, 0.94),
+    rgba(59, 18, 61, 0.82)
+  );
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.peer-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 79, 216, 0.09), transparent 22%),
+    radial-gradient(circle at 82% 78%, rgba(168, 85, 247, 0.11), transparent 24%);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  pointer-events: none;
+}
+
+.peer-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 79, 216, 0.20);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.28);
+}
+
+.peer-card:hover::before {
+  opacity: 1;
+}
+
+.peer-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.peer-card-content {
+  padding: 28px;
+}
+
+.peer-card {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.peer-card-content span {
+  display: inline-block;
+  color: var(--accent-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.peer-card-content h3 {
+  color: var(--text-main);
+  font-size: 1.35rem;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  margin-bottom: 14px;
+}
+
+.peer-card-content p {
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  line-height: 1.78;
+  margin-bottom: 14px;
+}
+
+.peer-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Gallery */
+
+.peer-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.peer-photo-grid img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow:
+    0 18px 36px rgba(0,0,0,0.24),
+    0 0 22px rgba(255,79,216,0.08);
+}
+
+/* Reflection */
+
+.peer-reflection-card {
+  text-align: left;
+}
+
+.peer-reflection-card .secondary-btn {
+  margin-top: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 1080px) {
+  .peer-snapshot-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .peer-photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .peer-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .peer-hero-section {
+    padding: 54px 0 24px;
+  }
+
+  .peer-hero-wrap h1 {
+    font-size: 2.8rem;
+  }
+
+  .peer-story-card,
+  .peer-snapshot-card,
+  .peer-gallery-card,
+  .peer-reflection-card {
+    padding: 26px 22px;
+    border-radius: 24px;
+  }
+
+  .peer-hero-text,
+  .peer-story-card p,
+  .peer-reflection-card p,
+  .peer-section-heading p,
+  .peer-card-content p {
+    font-size: 0.96rem;
+  }
+
+  .peer-float {
+    max-width: 36%;
+  }
+
+  .peer-float-right {
+    float: right;
+    margin-left: 14px;
+    margin-bottom: 10px;
+  }
+
+  .peer-float-left {
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 10px;
+  }
+
+  .peer-float img {
+    max-height: 280px;
+    border-radius: 18px;
+  }
+
+  .peer-snapshot-card {
+    grid-template-columns: 1fr;
+  }
+
+  .peer-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .peer-photo-grid img {
+    height: 240px;
+  }
+
+  .peer-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .peer-hero-buttons .primary-btn,
+  .peer-hero-buttons .secondary-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .peer-float,
+  .peer-float-left,
+  .peer-float-right {
+    float: none;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .peer-float img {
+    max-width: 100%;
+    max-height: none;
   }
 }
 
