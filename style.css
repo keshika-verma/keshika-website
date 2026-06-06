@@ -29,11 +29,21 @@ html {
 
 body {
   font-family: "Inter", Arial, sans-serif;
-  background:
+  background-color: #12071f;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px),
     radial-gradient(circle at top left, rgba(168, 85, 247, 0.20), transparent 30%),
     radial-gradient(circle at top right, rgba(255, 79, 216, 0.18), transparent 28%),
     radial-gradient(circle at bottom center, rgba(217, 70, 239, 0.12), transparent 30%),
     linear-gradient(135deg, #12071f, #251032 45%, #3b123d 100%);
+  background-size:
+    40px 40px,
+    40px 40px,
+    auto,
+    auto,
+    auto,
+    auto;
   color: var(--text-main);
   min-height: 100vh;
   overflow-x: hidden;
@@ -92,6 +102,7 @@ body .page-grid {
   z-index: -3;
   pointer-events: none;
   mask-image: radial-gradient(circle at center, black 45%, transparent 85%);
+  display: none;
 }
 
 /* navbar */
